@@ -26,12 +26,17 @@
     "winston-mongodb": "^5.0.7"
   },
   "scripts": {
-    "test": "nodemon ./server.js",
-    "start": "node server.js"
+    "test": "nodemon ./index.js",
+    "start": "node App.js"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "git+https://github.com/smailkaddi/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE.git"
   },
   "author": "smailkaddi",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smailkaddi/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE/issues"
+  },
+  "homepage": "https://github.com/smailkaddi/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE#readme"
 }
