@@ -26,17 +26,12 @@
     "winston-mongodb": "^5.0.7"
   },
   "scripts": {
-    "test": "nodemon ./index.js",
-    "start": "node App.js"
+    "test": "nodemon ./server.js",
+    "start": "node server.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YassineCherkaoui/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE.git"
+    "type": "git"
   },
-  "author": "YASSINE CHERKAOUI",
+  "author": "smailkaddi",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/YassineCherkaoui/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE/issues"
-  },
-  "homepage": "https://github.com/YassineCherkaoui/APPLICATION-MARKETPLACE-MEDICAL-REPRESENTATIVE#readme"
 }
