@@ -26,8 +26,8 @@
     "winston-mongodb": "^5.0.7"
   },
   "scripts": {
-    "test": "nodemon ./index.js",
-    "start": "node App.js"
+    "test": "nodemon ./server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
