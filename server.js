@@ -15,22 +15,21 @@ app.use(bodyPrser.urlencoded({extended:true}))
 
 app.use(bodyPrser.json())
 
-const logWinston = require('../SERVER/log/log');
+
 
 const multer = require('multer');
 
 
-
+require('dotenv').config()
 
 
 //Mongoose
 mongoose.connect('mongodb+srv://smailkaddi:kaddismail9533@cluster0.qwibo.mongodb.net/marketplace?retryWrites=true&w=majority',{
     useNewUrlParser : true
 }).then(()=>{
-    console.log('Successfully Connected to the Database');
+console.log("sessuss");
 }).catch(err =>{
-    console.log('could not connect to the database . Exiting now..',
-    process.exit());
+console.log("errorr");
 });
 
 
@@ -47,10 +46,10 @@ require('./Router/Admin.router')(app);
 require('./Router/Client.router')(app);
 require('./Router/Email')(app);
 
-const Port = process.env.PORT || 8080;
-app.listen(Port,()=>{
-    console.log("Your Server is on ",`http://localhost:${Port}`);
-})
+
+app.listen(process.env.PORT, () => {
+    console.log("connected to server " + process.env.PORT);
+  });
 
 
 
@@ -58,20 +57,3 @@ app.listen(Port,()=>{
 
 
 
-
-
-
-
-
-app.use(express.static(__dirname + '/public'));
-
-// const storage = multer.diskStorage({
-//     destination: function(req, file, cb) {
-//         cb(null, 'uploads/');
-//     },
-
-//     // By default, multer removes file extensions so let's add them back
-//     filename: function(req, file, cb) {
-//         cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
-//     }
-// });
