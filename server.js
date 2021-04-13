@@ -24,7 +24,7 @@ require('dotenv').config()
 
 
 //Mongoose
-mongoose.connect('mongodb+srv://smailkaddi:kaddismail9533@cluster0.qwibo.mongodb.net/marketplace?retryWrites=true&w=majority',{
+mongoose.connect('mongodb+srv://admin:admin@cluster0.trdtm.mongodb.net/marketplace?retryWrites=true&w=majority',{
     useNewUrlParser : true
 }).then(()=>{
 console.log("sessuss");
